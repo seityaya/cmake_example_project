@@ -10,16 +10,16 @@ set(CMAKE_C_STANDARD 11)
 add_definitions(-std=c11)
 
 set(VERSION 0.1)
-set(PROJECT_NAME my_calc)
+set(PROJECT_NAME my_math)
 
 project(${PROJECT_NAME})
 
 set(SRC_LIST
-    my_calc.c
+    my_math.c
 )
 
 set(INC_LIST
-    my_calc.h
+    my_math.h
 )
 
 add_library(${PROJECT_NAME} ${SRC_LIST} ${INC_LIST})

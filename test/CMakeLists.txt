@@ -10,7 +10,7 @@ set(CMAKE_C_STANDARD 11)
 add_definitions(-std=c11)
 
 set(VERSION 0.1)
-set(PROJECT_NAME my_calc_test)
+set(PROJECT_NAME my_math_test)
 
 project(${PROJECT_NAME})
 
@@ -27,5 +27,5 @@ add_executable(
     ${INC_LIST}
 )
 
-target_link_libraries(${PROJECT_NAME} PUBLIC my_calc)
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../lib)
+target_link_libraries(${PROJECT_NAME} PUBLIC my_math)
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../core)

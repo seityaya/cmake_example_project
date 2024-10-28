@@ -1,5 +1,6 @@
-#include "my_calc.h"
+#include "my_math.h"
 
 int main(int argc, char* argv[]){
-    return my_calc(1, 2, 3);
+    int a = my_sum(1, my_dif(4, 3));
+    return 0;
 }

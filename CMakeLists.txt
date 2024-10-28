@@ -9,12 +9,12 @@ cmake_minimum_required(VERSION 3.0)
 set(CMAKE_C_STANDARD 11)
 add_definitions(-std=c11)
 
-set(VERSION 0.1)
-set(PROJECT_NAME my_calc_project)
+set(VERSION 0.2)
+set(PROJECT_NAME my_math_project)
 
 project(${PROJECT_NAME})
 
 
-add_subdirectory(lib)
+add_subdirectory(core)
 add_subdirectory(test)
 add_subdirectory(using)
